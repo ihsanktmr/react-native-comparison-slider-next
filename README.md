@@ -8,22 +8,22 @@ Compare any two components side by side in your React Native app.
 
 To install the package, run the following command:
 
-``` 
+```
 $ npm install react-native-comparison-slider-next
 ```
 
 ## Props
 
-| Prop                   | Type                                 | Required | Default value  | Description                         |
-| ---------------------- | ------------------------------------ | :------: | -------------- | ----------------------------------- |
-| `before`               | `ReactNode`                          |    ✓     | `undefined`    | The first component to display in the slider.  |
-| `after`                | `ReactNode`                          |    ✓     | `undefined`    | The second component to display in the slider. |
-| `containerSize`        | `{ width: number; height: number; }` |    ✓     | `{ width: '100%', height: '100%' }` | Dimensions of the container.               |
-| `sliderSize`           | `{ width: number; height: number; }` |          | `{ width: 50, height: 50 }`     | Dimensions of the slider's handle.         |
-| `SliderComponent`      | `ReactNode`                          |          | `undefined`    | Custom component for the slider's handle.          |
-| `sliderStyles`         | `ViewStyle`                          |          | `undefined`    | Styles for the slider's handle.             |
-| `showSeparationLine`   | `boolean`                            |          | `undefined`    | Whether to show the separation line.         |
-| `separationLineStyles` | `ViewStyle`                          |          | `undefined`    | Styles for the separation line.             |
+| Prop                   | Type                                 | Required | Default value                       | Description                                    |
+| ---------------------- | ------------------------------------ | :------: | ----------------------------------- | ---------------------------------------------- |
+| `before`               | `ReactNode`                          |    ✓     | `undefined`                         | The first component to display in the slider.  |
+| `after`                | `ReactNode`                          |    ✓     | `undefined`                         | The second component to display in the slider. |
+| `containerSize`        | `{ width: number; height: number; }` |    ✓     | `{ width: '100%', height: '100%' }` | Dimensions of the container.                   |
+| `sliderSize`           | `{ width: number; height: number; }` |          | `{ width: 50, height: 50 }`         | Dimensions of the slider's handle.             |
+| `SliderComponent`      | `ReactNode`                          |          | `undefined`                         | Custom component for the slider's handle.      |
+| `sliderStyles`         | `ViewStyle`                          |          | `undefined`                         | Styles for the slider's handle.                |
+| `showSeparationLine`   | `boolean`                            |          | `undefined`                         | Whether to show the separation line.           |
+| `separationLineStyles` | `ViewStyle`                          |          | `undefined`                         | Styles for the separation line.                |
 
 ## Usage
 
@@ -40,9 +40,8 @@ const imageAfter = require('./path/to/imageAfter.jpg');
   before={<Image source={imageBefore} resizeMode="cover" />}
   after={<Image source={imageAfter} resizeMode="cover" />}
   containerSize={{ width: 350, height: 100 }}
-/>
+/>;
 ```
-
 
 ## Contributing
 
