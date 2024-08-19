@@ -1,37 +1,44 @@
-<div align="center">
-  <h1>React Native Comparision Slider Next</h1>
-  <p>Compare any two components</p>
+# React Native Comparison Slider Next
+
+Compare any two components side by side in your React Native app.
 
 ![Example](./example/assets/slider-teaser.gif)
 
 ## Installation
 
-```sh
-npm install react-native-comparison-slider-next
+To install the package, run the following command:
+
+``` 
+$ npm install react-native-comparison-slider-next
 ```
 
 ## Props
 
 | Prop                   | Type                                 | Required | Default value  | Description                         |
 | ---------------------- | ------------------------------------ | :------: | -------------- | ----------------------------------- |
-| `before`               | `ReactNode`                          |    ✓     | `undefined`    | First component to show in slider.  |
-| `after`                | `ReactNode`                          |    ✓     | `undefined`    | Second component to show in slider. |
-| `containerSize`        | `{ width: number; height: number; }` |    ✓     | `{100%, 100%}` | Container dimensions.               |
-| `sliderSize`           | `{ width: number; height: number; }` |          | `{50, 50}`     | Slider's handle dimensions.         |
-| `SliderComponent`      | `ReactNode`                          |          | `undefined`    | Slider's handle component.          |
-| `sliderStyles`         | `ViewStyle`                          |          | `undefined`    | Slider's handle styles.             |
-| `showSeparationLine`   | `boolean`                            |          | `undefined`    | Separation line visibility.         |
-| `separationLineStyles` | `ViewStyle`                          |          | `undefined`    | Separation line styles.             |
-
+| `before`               | `ReactNode`                          |    ✓     | `undefined`    | The first component to display in the slider.  |
+| `after`                | `ReactNode`                          |    ✓     | `undefined`    | The second component to display in the slider. |
+| `containerSize`        | `{ width: number; height: number; }` |    ✓     | `{ width: '100%', height: '100%' }` | Dimensions of the container.               |
+| `sliderSize`           | `{ width: number; height: number; }` |          | `{ width: 50, height: 50 }`     | Dimensions of the slider's handle.         |
+| `SliderComponent`      | `ReactNode`                          |          | `undefined`    | Custom component for the slider's handle.          |
+| `sliderStyles`         | `ViewStyle`                          |          | `undefined`    | Styles for the slider's handle.             |
+| `showSeparationLine`   | `boolean`                            |          | `undefined`    | Whether to show the separation line.         |
+| `separationLineStyles` | `ViewStyle`                          |          | `undefined`    | Styles for the separation line.             |
 
 ## Usage
 
+Here's a basic example of how to use the `CompareSlider` component:
+
 ```jsx
-import { CompareSlider } from 'react-native-compare-slider';
+import { CompareSlider } from 'react-native-comparison-slider-next';
+import { Image } from 'react-native';
+
+const imageBefore = require('./path/to/imageBefore.jpg');
+const imageAfter = require('./path/to/imageAfter.jpg');
 
 <CompareSlider
   before={<Image source={imageBefore} resizeMode="cover" />}
-  after={<Image source={imageAfter}      resizeMode="cover" />}
+  after={<Image source={imageAfter} resizeMode="cover" />}
   containerSize={{ width: 350, height: 100 }}
 />
 ```
@@ -39,12 +46,12 @@ import { CompareSlider } from 'react-native-compare-slider';
 
 ## Contributing
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+If you'd like to contribute, please check out the [contributing guide](CONTRIBUTING.md) for more information on the development workflow and how to get involved.
 
 ## License
 
-MIT
+This project is licensed under the MIT License.
 
 ---
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+Made with ❤️ using [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
