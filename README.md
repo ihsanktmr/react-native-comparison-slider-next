@@ -2,14 +2,14 @@
 
 Compare any two components side by side in your React Native app.
 
-![Example](./example/assets/slider-teaser.gif)
+![Example](./example/assets/teaser.gif)
 
 ## Installation
 
 To install the package, run the following command:
 
 ```
-$ npm install react-native-comparison-slider-next
+npm install react-native-comparison-slider-next
 ```
 
 ## Props
