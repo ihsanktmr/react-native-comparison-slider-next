@@ -25,11 +25,5 @@
     "strict": true,
     "target": "ESNext",
     "verbatimModuleSyntax": true
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs",
-      "moduleResolution": "node16"
-    }
   }
 }
